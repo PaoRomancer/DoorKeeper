@@ -1,3 +1,4 @@
+//-------------------- Radio Frequency Identification -------------------- //
 #include <SPI.h>
 #include <MFRC522.h>
 
@@ -45,9 +46,11 @@ BLYNK_WRITE(V0)
   int val = param.asInt();  // Get the value from the button widget (0 or 1)
   
   if (val == 1) {
+    tone(BUZZER_PIN, 2000);       // Send sound to buzzer at 1000Hz
     digitalWrite(RELAY_PIN, HIGH);  // Turn on the relay (set to HIGH)
     Serial.println("Relay ON");
   } else {
+    noTone(BUZZER_PIN);           // Turn off the buzzer
     digitalWrite(RELAY_PIN, LOW);   // Turn off the relay (set to LOW)
     Serial.println("Relay OFF");
   }
@@ -86,11 +89,11 @@ void loop() {
   Blynk.run();
 // Read the analog value from the sensor
   sensorValue = analogRead(SENSOR_PIN);
-  //Serial.println(sensorValue);
+  Serial.println(sensorValue);
   delay(300);  // Small delay to stabilize the readings
 
 
-  if (sensorValue < 1000) {
+  if (sensorValue < 500) {
     count++; // เพิ่มค่าตัวนับ
     Serial.print("Authorized Card Detected. Count: ");
     Serial.println(count);
@@ -113,6 +116,8 @@ void loop() {
     delay(3000);                  // Keep the LED on for 5 seconds
     digitalWrite(LED_PIN, LOW);   // Turn off the LED
     digitalWrite(RELAY_PIN, LOW);   // Turn off the relay (cut power)
+
+    Blynk.virtualWrite(V1, count);
   }
 
   // Check if a new card is present (RFID control is independent)
