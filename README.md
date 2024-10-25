@@ -1,3 +1,5 @@
+![My Project Screenshot](image/kmitlfight.png)
+
 # ✨✨  ❝ DoorKeeper - กลอนประตูรักษาการอัจฉริยะ ❞ ✨✨
 
 Semester 1, Academic Year 2024
@@ -7,7 +9,7 @@ IoT System and Information Engineering
 
 King Mongkut's Institute of Technology Ladkrabang
 
-![My Project Screenshot](image/kmitlfight.png)
+
 
 ## 📁 Table of Contents
 
