@@ -27,8 +27,9 @@ King Mongkut's Institute of Technology Ladkrabang
 
 - [Dashboard](https://doornot.fakepng.dev/ui)
 
-## รายชื่อสมาชิก
+## Credits
 
+#### Member
 - 66010399 นายนพรุจ จิตถวิล
 - 66010756 นายวริศวุธ จันทร์เชื้อ
 - 66011314 นายกฤษณ์ เกษมเทวินทร์
