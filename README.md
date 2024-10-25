@@ -12,14 +12,14 @@ King Mongkut's Institute of Technology Ladkrabang
 ## 📁 Table of Contents
 
   🔸 [Links](#links) <br>
-  🔸 [Credits](#Credits)
-  🔸 [แนวคิดและที่มา](#แนวคิดและที่มา)
-  🔸 [ภาพรวมโครงงาน](#ภาพรวมโครงงาน)
-  🔸 [Block Diagram](#block-diagram)
-  🔸 [ส่วนประกอบ](#ส่วนประกอบ)
-  🔸 [Final Product](#final-product)
-  🔸 [Tech Stack](#tech-stack)
-  🔸 [Languages](#languages)
+  🔸 [Credits](#Credits) <br>
+  🔸 [แนวคิดและที่มา](#แนวคิดและที่มา) <br>
+  🔸 [ภาพรวมโครงงาน](#ภาพรวมโครงงาน) <br>
+  🔸 [Block Diagram](#block-diagram) <br>
+  🔸 [ส่วนประกอบ](#ส่วนประกอบ) <br>
+  🔸 [Final Product](#final-product) <br>
+  🔸 [Tech Stack](#tech-stack) <br>
+  🔸 [Languages](#languages) <br>
 
 ## Links
 
