@@ -35,9 +35,6 @@ King Mongkut's Institute of Technology Ladkrabang
 - TECHAWICH  AJJAGLAB : Create a model that can be used to simulate the project
 - THANATHON  PINYOMETAKUN : Database & Cloud & User Interface  
 
-กูไม่แปะหน้าหมาป่าเดียวดายหรอก ว่ะ ฮ้า ฮ่า
-ลืมอดีตอันดำมืดของพวกเราไปซะ
-
 ### ขอขอบคุณผู้ให้คำปรึกษา
 - ดร.นัชนัยน์ รุ่งเหมือนฟ้า
 - ผศ.สรพงษ์ วชิรรัตนพรกุล
