@@ -55,7 +55,7 @@ This project addresses the need for creating a secure and private working enviro
 
 ![My Project Screenshot](image/image3.png) 
 
-## 🚀 Project Overview
+## 🌈 Project Overview
 
 ![My Project Screenshot](image/image2.png) 
 
@@ -80,11 +80,11 @@ This project addresses the need for creating a secure and private working enviro
 |      ![ACSOCKET](/assets/ACSOCKET.jpg)       |          Socket AC Power          |      Socket AC Power       |    10.00 |
 |      Total (ไม่รวมค่าขนส่งและค่าอื่นๆ)       |                                   |                            |   851.00 |
 
-## Final Product
+## 🤩 Final Product
 
 ![My Project Screenshot](image/finalpj.png) 
 
-## Future Goals
+## 🚀 Future Goals
 
 #### Face Recognition Integration:
 Integrate a camera module with face recognition software (such as OpenCV) to add an additional layer of security. This could help confirm identity beyond just the RFID scan, improving security for sensitive areas.
@@ -92,5 +92,5 @@ Integrate a camera module with face recognition software (such as OpenCV) to add
 #### Hall magnetic Sensor Module:
 Currently we are using delay to command the electric lock to lock, in the future we will develop using magnetic sensor.
 
-## Languages
+## 💻 Languages
 - [C++](https://en.wikipedia.org/wiki/C%2B%2B)
