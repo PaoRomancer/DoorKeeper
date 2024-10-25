@@ -61,7 +61,7 @@ This project addresses the need for creating a secure and private working enviro
 
 ## ✨ Block Diagram
 
-![block diagram](/assets/BlockDiagram.png)
+![My Project Screenshot](image/image4.png) 
 
 ## 📍 ส่วนประกอบ
 
@@ -82,7 +82,7 @@ This project addresses the need for creating a secure and private working enviro
 
 ## Final Product
 
-![FINAL](/assets/FINAL.jpg)
+![My Project Screenshot](image/finalpj.png) 
 
 ## Future Goals
 
