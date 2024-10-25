@@ -93,7 +93,4 @@ Integrate a camera module with face recognition software (such as OpenCV) to add
 Currently we are using delay to command the electric lock to lock, in the future we will develop using magnetic sensor.
 
 ## Languages
-
-- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Typescript](https://www.typescriptlang.org/)
 - [C++](https://en.wikipedia.org/wiki/C%2B%2B)
