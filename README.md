@@ -39,7 +39,7 @@ King Mongkut's Institute of Technology Ladkrabang
 
 ## ภาพรวมโครงงาน
 
-![image](/assets/Design.png)
+![image](/image/Screenshot 2024-10-25 221248.png)
 
 ## Block Diagram
 
