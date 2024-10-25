@@ -29,14 +29,15 @@ King Mongkut's Institute of Technology Ladkrabang
 
 ## Credits
 
-#### Member
-- 66010399 นายนพรุจ จิตถวิล
-- 66010756 นายวริศวุธ จันทร์เชื้อ
-- 66011314 นายกฤษณ์ เกษมเทวินทร์
+### Member
+- NATTHAWIT NOWANGHAN : Hardware (Device) & Database
+- TECHAWICH  AJJAGLAB : Create a model that can be used to simulate the project
+- THANATHON  PINYOMETAKUN : Database & Cloud & User Interface  
 
 
-#### ขอขอบคุณผู้ให้คำปรึกษา
-- ดร.
+### ขอขอบคุณผู้ให้คำปรึกษา
+- ดร.นัชนัยน์ รุ่งเหมือนฟ้า
+- ผศ.สรพงษ์ วชิรรัตนพรกุล
 - ธิติ ศรีประสงค์
 - กฤษณ์ เกษมเทวินทร์
 - อังศุชวาล	สมิตชาติ
