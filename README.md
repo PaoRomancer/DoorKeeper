@@ -1,4 +1,4 @@
-# ❝ DoorKeeper - กลอนประตูรักษาการอัจฉริยะ ❞
+# ✨✨  ❝ DoorKeeper - กลอนประตูรักษาการอัจฉริยะ ❞ ✨✨
 
 Semester 1, Academic Year 2024
 As part of the project, subject 01236254 Circuit and Electronics and subject 01236255 Introduction to Internet of Things
@@ -55,7 +55,7 @@ King Mongkut's Institute of Technology Ladkrabang
 
 ![My Project Screenshot](image/image2.png) 
 
-## 📣 Block Diagram
+## ✨ Block Diagram
 
 ![block diagram](/assets/BlockDiagram.png)
 
