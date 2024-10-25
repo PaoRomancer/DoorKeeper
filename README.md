@@ -31,7 +31,7 @@ King Mongkut's Institute of Technology Ladkrabang
 ## 👥 Credits
 
 ### Member
-- NATTHAWIT NOWANGHAN : Hardware (Device) & Database
+- NATTHAWIT NOWANGHAN : Hardware (Device) & Cloud & User Interface
 - TECHAWICH  AJJAGLAB : Create a model that can be used to simulate the project
 - THANATHON  PINYOMETAKUN : Database & Cloud & User Interface  
 
