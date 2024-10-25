@@ -84,24 +84,13 @@ This project addresses the need for creating a secure and private working enviro
 
 ![FINAL](/assets/FINAL.jpg)
 
-## Tech Stack
+## Future Goals
 
-- [VS Code](https://code.visualstudio.com/): IDE
-- [PlatformIO](https://platformio.org/): Arduino compiler
-- [Node.js](https://nodejs.org/en/): Javascript runtime
-- [Express.js](https://expressjs.com/): Web framework for Node.js
-- [Typescript](https://www.typescriptlang.org/): Strong type Javascript
-- [Prisma](https://www.prisma.io/): Typescript ORM
-- [PostgreSQL](https://www.postgresql.org/): Database
-- [Node-RED](https://nodered.org/): Flow-based programming for IoT
-- [Mosquitto](https://mosquitto.org/): MQTT broker
-- [Docker](https://www.docker.com/): Containerization
-- [Portainer](https://www.portainer.io/): Docker management
-- [Cloudflare](https://www.cloudflare.com/): DNS, CDN, SSL
-- [Cloudflare Tunnel](https://www.cloudflare.com/products/tunnel/): Expose local server to the internet
-- [Nginx Proxy Manager](https://nginxproxymanager.com/): Reverse proxy
-- [Proxmox](https://www.proxmox.com/en/): Hypervisor
-- [GitHub](https://github.com): Version control
+#### Face Recognition Integration:
+Integrate a camera module with face recognition software (such as OpenCV) to add an additional layer of security. This could help confirm identity beyond just the RFID scan, improving security for sensitive areas.
+
+#### Hall magnetic Sensor Module:
+Currently we are using delay to command the electric lock to lock, in the future we will develop using magnetic sensor.
 
 ## Languages
 
