@@ -7,7 +7,7 @@ IoT System and Information Engineering
 
 King Mongkut's Institute of Technology Ladkrabang
 
-![My Project Screenshot](images/kmitlfight.png)
+![My Project Screenshot](image/kmitlfight.png)
 
 ## 📁 Table of Contents
 
