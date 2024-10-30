@@ -66,7 +66,7 @@ This project addresses the need for creating a secure and private working enviro
 
 |                     image                    |            Component             |         details         | value (฿) |
 | :------------------------------------------: | :-------------------------------: | :------------------------: | -------: |
-|  |          Arduino UNO R4 WiFi      | System operation control board |   1099.00 |
+| ![My Project Screenshot](image/ARD-UNO-R4W.png)|          Arduino UNO R4 WiFi      | System operation control board |   1099.00 |
 |     ![RFIDRC522](/assets/RFIDRC522.jpg)      |        RFID Card Reader/Detector Module Kit (RC522) พร้อม Tag Card และ Tag พวงกุญแจ        |     RFID card reader board     |    50.00 |
 |   ![RELAYMODULE](/assets/RELAYMODULE.jpg)    |           Relay 5V 1 Channel Isolation High And Low Trigger relay            |  Door control relay board  |    30.00 |
 | ![SOLENIOIDLOCK](/assets/SOLENOIDLOCK.webp)  |           Solenoid Lock           |          กรประตู           |   190.00 |
