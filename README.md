@@ -67,12 +67,11 @@ This project addresses the need for creating a secure and private working enviro
 |                     image                    |            Component             |         details         | value (฿) |
 | :------------------------------------------: | :-------------------------------: | :------------------------: | -------: |
 | ![My Project Screenshot](image/ARD-UNO-R4W.png)|          Arduino UNO R4 WiFi      | System operation control board |   1099.00 |
-|     ![RFIDRC522](/assets/RFIDRC522.jpg)      |        RFID Card Reader/Detector Module Kit (RC522) พร้อม Tag Card และ Tag พวงกุญแจ        |     RFID card reader board     |    50.00 |
-|   ![RELAYMODULE](/assets/RELAYMODULE.jpg)    |           Relay 5V 1 Channel Isolation High And Low Trigger relay            |  Door control relay board  |    30.00 |
-| ![SOLENIOIDLOCK](/assets/SOLENOIDLOCK.webp)  |           Solenoid Lock           |          กรประตู           |   190.00 |
-|        ![Buzzer](/assets/BUZZER.jpg)         |              Buzzer               |   บอร์ดส่งเสียงแจ้งเตือน   |     9.00 |
-|    ![DCSTEPDOWN](/assets/DCSTEPDOWN.jpg)     | DC-DC Step Down (12VDC -> 3.2VDC) |    บอร์ดแปลงกระแสไฟฟ้า     |    30.00 |
-|   ![POWERSUPPLY](/assets/POWERSUPPLY.jpg)    |  Power Supply (220VAC -> 12VDC)   |    บอร์ดแปลงกระแสไฟฟ้า     |   280.00 |
+|     ![RFIDRC522](image/rfidpic.png)      |        RFID Card Reader/Detector Module Kit (RC522) พร้อม Tag Card และ Tag พวงกุญแจ        |     RFID card reader board     |    50.00 |
+|   ![RELAYMODULE](image/relaypic.png)    |           Relay 5V 1 Channel Isolation High And Low Trigger relay            |  Door control relay board  |    30.00 |
+| ![SOLENIOIDLOCK](image/jfpic.png)  |           Solenoid Lock           |          กรประตู           |   190.00 |
+|        ![Buzzer](image/BUZZER.ppg)         |              Buzzer               |   บอร์ดส่งเสียงแจ้งเตือน   |     9.00 |
+|   ![POWERSUPPLY](image/dcpic.png)    |  Power Supply (220VAC -> 12VDC)   |    บอร์ดแปลงกระแสไฟฟ้า     |   280.00 |
 |           ![PCB](/assets/PCB.jpg)            |                PCB                |       Prototype PCB        |    45.00 |
 |        ![BUTTON](/assets/BUTTON.webp)        |              Button               |           ปุ่มกด           |     9.00 |
 |      ![TERMINAL](/assets/TERMINAL.jpg)       |          Screw terminal           |         Connector          |    15.00 |
