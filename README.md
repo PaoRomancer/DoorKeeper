@@ -25,7 +25,7 @@ King Mongkut's Institute of Technology Ladkrabang
 
 ## 🌐 Links
 
-- [Dashboard](https://nothai.com)
+- [Dashboard](https://water-quality-dashboard.vercel.app/login.html)
 
 ## 👥 Credits
 
