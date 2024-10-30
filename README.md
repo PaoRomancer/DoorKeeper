@@ -75,7 +75,7 @@ This project addresses the need for creating a secure and private working enviro
 |           ![PCB](image/Breadboardpic.png)            |                Breadboard                |       บอร์ดทดลอง Breadboard 400 holes       |    24.00 |
 |        ![BUTTON](image/buttonpic.png)        |              Button               |           reset round button switch           |     7.00 |
 |      ![TERMINAL](image/irpic.png)       |          E18-D80NK Photoelectric Sensor Infrared Reflectance Proximity Sensor for Arduino           |         Count the number of people          |    85.00 |
-|      Total (excluding shipping and other costs)       |                                   |                            |   1700.00 |
+|      Total (excluding shipping and other costs)       |                                   |                            |   1700.00 (Baht) |
 
 ## 🤩 Final Product
 
