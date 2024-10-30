@@ -25,7 +25,7 @@ King Mongkut's Institute of Technology Ladkrabang
 
 ## 🌐 Links
 
-- [Dashboard](https://doornot.fakepng.dev/ui)
+- [Dashboard](https://nothai.com)
 
 ## 👥 Credits
 
