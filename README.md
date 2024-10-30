@@ -69,9 +69,9 @@ This project addresses the need for creating a secure and private working enviro
 | ![My Project Screenshot](image/ARD-UNO-R4W.png)|          Arduino UNO R4 WiFi      | System operation control board |   1099.00 |
 |     ![RFIDRC522](image/rfidpic.png)      |        RFID Card Reader/Detector Module Kit (RC522) พร้อม Tag Card และ Tag พวงกุญแจ        |     RFID card reader board     |    50.00 |
 |   ![RELAYMODULE](image/relaypic.png)    |           Relay 5V 1 Channel Isolation High And Low Trigger relay            |  Door control relay board  |    30.00 |
-| ![SOLENIOIDLOCK](image/jfpic.png)  |           Solenoid Lock           |          กรประตู           |   190.00 |
-|        ![Buzzer](image/BUZZER.ppg)         |              Buzzer               |   บอร์ดส่งเสียงแจ้งเตือน   |     9.00 |
-|   ![POWERSUPPLY](image/dcpic.png)    |  Power Supply (220VAC -> 12VDC)   |    บอร์ดแปลงกระแสไฟฟ้า     |   280.00 |
+| ![SOLENIOIDLOCK](image/jfpic.png)  |           JF-0826B 12V กลอนไฟฟ้า กลอนประตูไฟฟ้า JF-0826B แม่เหล็กไฟฟ้าโซลินอยด์แม่เหล็กไฟฟ้า          |          Electric door lock          |   120.00 |
+|        ![Buzzer](image/buzzerpic.png)         |              Buzzer               |  The board sends a notification sound.    |     5.00 |
+|   ![POWERSUPPLY](image/dcpic.png)    |  Power Supply (220VAC -> 12VDC)   |    Power converter board     |   280.00 |
 |           ![PCB](/assets/PCB.jpg)            |                PCB                |       Prototype PCB        |    45.00 |
 |        ![BUTTON](/assets/BUTTON.webp)        |              Button               |           ปุ่มกด           |     9.00 |
 |      ![TERMINAL](/assets/TERMINAL.jpg)       |          Screw terminal           |         Connector          |    15.00 |
