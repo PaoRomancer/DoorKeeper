@@ -72,11 +72,10 @@ This project addresses the need for creating a secure and private working enviro
 | ![SOLENIOIDLOCK](image/jfpic.png)  |           JF-0826B 12V กลอนไฟฟ้า กลอนประตูไฟฟ้า JF-0826B แม่เหล็กไฟฟ้าโซลินอยด์แม่เหล็กไฟฟ้า          |          Electric door lock          |   120.00 |
 |        ![Buzzer](image/buzzerpic.png)         |              Buzzer               |  The board sends a notification sound.    |     5.00 |
 |   ![POWERSUPPLY](image/dcpic.png)    |  Power Supply (220VAC -> 12VDC)   |    Power converter board     |   280.00 |
-|           ![PCB](/assets/PCB.jpg)            |                PCB                |       Prototype PCB        |    45.00 |
-|        ![BUTTON](/assets/BUTTON.webp)        |              Button               |           ปุ่มกด           |     9.00 |
+|           ![PCB](image/Breadboardpic.png)            |                Breadboard                |       บอร์ดทดลอง Breadboard 400 holes       |    24.00 |
+|        ![BUTTON](image/butoonpic.png)        |              Button               |           reset round button switch           |     7.00 |
 |      ![TERMINAL](image/irpic.png)       |          E18-D80NK Photoelectric Sensor Infrared Reflectance Proximity Sensor for Arduino           |         Count the number of people          |    85.00 |
-|      ![ACSOCKET](/assets/ACSOCKET.jpg)       |          Socket AC Power          |      Socket AC Power       |    10.00 |
-|      Total (ไม่รวมค่าขนส่งและค่าอื่นๆ)       |                                   |                            |   851.00 |
+|      Total (excluding shipping and other costs)       |                                   |                            |   851.00 |
 
 ## 🤩 Final Product
 
