@@ -62,11 +62,11 @@ This project addresses the need for creating a secure and private working enviro
 
 ![My Project Screenshot](image/image4.png) 
 
-## 📍 ส่วนประกอบ
+## 📍 Component
 
-|                     รูป                      |            ส่วนประกอบ             |         รายละเอียด         | ราคา (฿) |
+|                     image                    |            Component             |         details         | value (฿) |
 | :------------------------------------------: | :-------------------------------: | :------------------------: | -------: |
-| ![ESP8266DevKit](/assets/ESP8266DevKit.webp) |          ESP8266 DevKit           | บอร์ดควบคุมการทำงานของระบบ |   150.00 |
+|  |          Arduino UNO R4 WiFi      | System operation control board |   1099.00 |
 |     ![RFIDRC522](/assets/RFIDRC522.jpg)      |        RFID Module (rc522)        |     บอร์ดอ่านบัตร RFID     |    55.00 |
 |   ![RELAYMODULE](/assets/RELAYMODULE.jpg)    |           Relay Module            |  บอร์ดรีเลย์ควบคุมกรประตู  |    58.00 |
 | ![SOLENIOIDLOCK](/assets/SOLENOIDLOCK.webp)  |           Solenoid Lock           |          กรประตู           |   190.00 |
