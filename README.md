@@ -24,8 +24,9 @@ King Mongkut's Institute of Technology Ladkrabang
   🔸 [Languages](#-Languages) <br>
 
 ## 🌐 Links
-
-- [Dashboard](https://water-quality-dashboard.vercel.app/login.html)
+- Presentation Video 👉 [Click Here](https://water-quality-dashboard.vercel.app/login.html)
+- My Website 👉 [Click Here](https://water-quality-dashboard.vercel.app/login.html)
+- Dashboard  👉 [Click Here](https://water-quality-dashboard.vercel.app/login.html)
 
 ## 👥 Credits
 
