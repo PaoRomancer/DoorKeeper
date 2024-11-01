@@ -18,7 +18,7 @@ King Mongkut's Institute of Technology Ladkrabang
   🔸 [Concept and rigin](#-concept-and-origin) <br>
   🔸 [Project Overview](#-Project-Overview) <br>
   🔸 [Block Diagram](#-block-diagram) <br>
-  🔸 [ส่วนประกอบ](#-Component) <br>
+  🔸 [Component](#-Component) <br>
   🔸 [Final Product](#-final-product) <br>
   🔸 [Tech Stack](#-Future-Goals) <br>
   🔸 [Languages](#-Languages) <br>
