@@ -19,8 +19,8 @@ King Mongkut's Institute of Technology Ladkrabang
   🔸 [Project Overview](#-Project-Overview) <br>
   🔸 [Block Diagram](#-block-diagram) <br>
   🔸 [Component](#-Component) <br>
-  🔸 [Final Product](#-final-product) <br>
-  🔸 [Tech Stack](#-Future-Goals) <br>
+  🔸 [Final Project](#-final-Project) <br>
+  🔸 [Future Goals](#-Future-Goals) <br>
   🔸 [Languages](#-Languages) <br>
 
 ## 🌐 Links
@@ -78,7 +78,7 @@ This project addresses the need for creating a secure and private working enviro
 |      ![TERMINAL](image/irpic.png)       |          E18-D80NK Photoelectric Sensor Infrared Reflectance Proximity Sensor for Arduino           |         Count the number of people          |    85.00 |
 |      Total (excluding shipping and other costs)       |                                   |                            |   1700.00 (Baht) |
 
-## 🤩 Final Product
+## 🤩 Final Project
 
 ![My Project Screenshot](image/finalpj.png) 
 
