@@ -1,0 +1,1001 @@
+[
+    {
+        "id": "d0e78df9fb0c4df6",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b5e5b64721cf28d0",
+        "type": "inject",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"Name\":\"Thanathon\",\"Surname\":\"Pinyometakun\",\"Department\":\"IoT System and Information\"}",
+        "payloadType": "json",
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "b4d727c5537ddf0f"
+            ]
+        ]
+    },
+    {
+        "id": "cd7cbc4c34a964ef",
+        "type": "debug",
+        "z": "d0e78df9fb0c4df6",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b4d727c5537ddf0f",
+        "type": "function",
+        "z": "d0e78df9fb0c4df6",
+        "name": "function 1",
+        "func": "msg.payload = msg.payload.Surname\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 140,
+        "wires": [
+            [
+                "cd7cbc4c34a964ef"
+            ]
+        ]
+    },
+    {
+        "id": "78f031aa4f29166d",
+        "type": "http request",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/weather?q=Bangkok,TH&APPID=637fff5b4c0157eebe50d3a5b2549f87",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 260,
+        "wires": [
+            [
+                "31f10aaa9070302a",
+                "2441b022cb61a53b"
+            ]
+        ]
+    },
+    {
+        "id": "31f10aaa9070302a",
+        "type": "json",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 570,
+        "y": 260,
+        "wires": [
+            [
+                "a36128ee355def7e"
+            ]
+        ]
+    },
+    {
+        "id": "abcfbb16d2e35b18",
+        "type": "inject",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "78f031aa4f29166d"
+            ]
+        ]
+    },
+    {
+        "id": "d0bf1dfdf71030f6",
+        "type": "debug",
+        "z": "d0e78df9fb0c4df6",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a36128ee355def7e",
+        "type": "debug",
+        "z": "d0e78df9fb0c4df6",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.weather.0.main",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "2441b022cb61a53b",
+        "type": "function",
+        "z": "d0e78df9fb0c4df6",
+        "name": "function 2",
+        "func": "msg.payload = msg.payload.clouds\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 420,
+        "wires": [
+            [
+                "d0bf1dfdf71030f6"
+            ]
+        ]
+    },
+    {
+        "id": "fdce82dc53f48ea2",
+        "type": "debug",
+        "z": "d0e78df9fb0c4df6",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "f19655d38d871491",
+        "type": "http request",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://universities.hipolabs.com/search?country=United+States",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 560,
+        "wires": [
+            [
+                "47e188b6bb5285bc"
+            ]
+        ]
+    },
+    {
+        "id": "47e188b6bb5285bc",
+        "type": "json",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 530,
+        "y": 620,
+        "wires": [
+            [
+                "fdce82dc53f48ea2"
+            ]
+        ]
+    },
+    {
+        "id": "567079f10158703b",
+        "type": "inject",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 560,
+        "wires": [
+            [
+                "f19655d38d871491"
+            ]
+        ]
+    },
+    {
+        "id": "3cd90ffbf90fdac7",
+        "type": "http in",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "url": "/state",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 840,
+        "wires": [
+            [
+                "8379ec785e40109a"
+            ]
+        ]
+    },
+    {
+        "id": "8379ec785e40109a",
+        "type": "function",
+        "z": "d0e78df9fb0c4df6",
+        "name": "function 3",
+        "func": "var led=global.get('switch')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 840,
+        "wires": [
+            [
+                "10b686e65956123d"
+            ]
+        ]
+    },
+    {
+        "id": "10b686e65956123d",
+        "type": "http response",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 750,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "212d7716616c6966",
+        "type": "inject",
+        "z": "d0e78df9fb0c4df6",
+        "name": "On",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 290,
+        "y": 1000,
+        "wires": [
+            [
+                "1d64c317500e9345"
+            ]
+        ]
+    },
+    {
+        "id": "4edf65f44ef3d124",
+        "type": "inject",
+        "z": "d0e78df9fb0c4df6",
+        "name": "Off",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 290,
+        "y": 960,
+        "wires": [
+            [
+                "1d64c317500e9345"
+            ]
+        ]
+    },
+    {
+        "id": "1d64c317500e9345",
+        "type": "function",
+        "z": "d0e78df9fb0c4df6",
+        "name": "function 4",
+        "func": "var state = msg.payload\nglobal.set('switch', state);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 980,
+        "wires": [
+            [
+                "0616fe5a07658c3d"
+            ]
+        ]
+    },
+    {
+        "id": "0616fe5a07658c3d",
+        "type": "debug",
+        "z": "d0e78df9fb0c4df6",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "537057118808a4ee",
+        "type": "mqtt in",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "topic": "Thanathon/data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f5dc48519a06dae4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 1420,
+        "wires": [
+            [
+                "587abd0189c91d15",
+                "6e8ba175695aaf90",
+                "ab8dd7b03968f374",
+                "1c430b30995b6824",
+                "b754434bf7bf02e1",
+                "42fcec9f8e758e81",
+                "5b92e830b13b3da8"
+            ]
+        ]
+    },
+    {
+        "id": "587abd0189c91d15",
+        "type": "debug",
+        "z": "d0e78df9fb0c4df6",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "f24c5a3750180b7d",
+        "type": "inject",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 1120,
+        "wires": [
+            [
+                "4387a051c7ad81e0"
+            ]
+        ]
+    },
+    {
+        "id": "4387a051c7ad81e0",
+        "type": "mqtt out",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "topic": "Thanathon/data",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f5dc48519a06dae4",
+        "x": 420,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "6e8ba175695aaf90",
+        "type": "ui_text",
+        "z": "d0e78df9fb0c4df6",
+        "group": "def4d719f508348c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperature",
+        "format": "{{msg.payload.data.temperature}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 430,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "ab8dd7b03968f374",
+        "type": "ui_gauge",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "group": "def4d719f508348c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "C",
+        "format": "{{msg.payload.data.temperature}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "8a7f0455c983de15",
+        "type": "ui_chart",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "group": "def4d719f508348c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 550,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c430b30995b6824",
+        "type": "function",
+        "z": "d0e78df9fb0c4df6",
+        "name": "function 5",
+        "func": "msg.payload = msg.payload.data.temperature\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1660,
+        "wires": [
+            [
+                "8a7f0455c983de15"
+            ]
+        ]
+    },
+    {
+        "id": "b754434bf7bf02e1",
+        "type": "ui_text",
+        "z": "d0e78df9fb0c4df6",
+        "group": "86953c6a3e47d14b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Humidity",
+        "format": "{{msg.payload.data.humidity}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 440,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "42fcec9f8e758e81",
+        "type": "ui_gauge",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "group": "86953c6a3e47d14b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "percent",
+        "format": "{{msg.payload.data.humidity}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 420,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "bbbe26f90e5fe3ab",
+        "type": "ui_chart",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "group": "86953c6a3e47d14b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "30",
+        "ymax": "70",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 620,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b92e830b13b3da8",
+        "type": "function",
+        "z": "d0e78df9fb0c4df6",
+        "name": "function 6",
+        "func": "msg.payload = msg.payload.data.humidity;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1200,
+        "wires": [
+            [
+                "bbbe26f90e5fe3ab"
+            ]
+        ]
+    },
+    {
+        "id": "079b3e6e708aa191",
+        "type": "ui_button",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "group": "def4d719f508348c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "On",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 690,
+        "y": 1280,
+        "wires": [
+            [
+                "5503d3e433f67b44"
+            ]
+        ]
+    },
+    {
+        "id": "5503d3e433f67b44",
+        "type": "mqtt out",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "topic": "led/status",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f5dc48519a06dae4",
+        "x": 900,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "30b622b0f7f23705",
+        "type": "ui_button",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "group": "def4d719f508348c",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Off",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 690,
+        "y": 1320,
+        "wires": [
+            [
+                "5503d3e433f67b44"
+            ]
+        ]
+    },
+    {
+        "id": "2f708b7fc47967e2",
+        "type": "mqtt in",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "topic": "Thanathon/data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f5dc48519a06dae4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 660,
+        "y": 1440,
+        "wires": [
+            [
+                "91d2b851ddaf9156",
+                "a0a96fd969521b2f"
+            ]
+        ]
+    },
+    {
+        "id": "91d2b851ddaf9156",
+        "type": "function",
+        "z": "d0e78df9fb0c4df6",
+        "name": "function 7",
+        "func": "if (msg.payload.data.temperature >= 22) {\n    msg.headers = {\n        'content-type': 'application/x-www-form-urlencoded',\n        'Authorization': 'Bearer abudEFah0VgkoyOgKaTA9WFwysppelOyMQVIf6zs6Se'\n    };\n    msg.payload = { \"message\": \"อุณหภูมิสูงเกิน !!!\" + msg.payload.data.temperature };\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1440,
+        "wires": [
+            [
+                "a0b7073e948170e8"
+            ]
+        ]
+    },
+    {
+        "id": "a0b7073e948170e8",
+        "type": "http request",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://notify-api.line.me/api/notify",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 990,
+        "y": 1500,
+        "wires": [
+            [
+                "0cd973eb91413778"
+            ]
+        ]
+    },
+    {
+        "id": "0cd973eb91413778",
+        "type": "debug",
+        "z": "d0e78df9fb0c4df6",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "a0a96fd969521b2f",
+        "type": "http request",
+        "z": "d0e78df9fb0c4df6",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLScEescd0-aaMXSvLQpe0ETxMkNfHEqmRQokhVXO8P4tGBwZyA/formResponse?usp=pp_url&entry.1821567241={{payload.data.temperature}}&entry.301937768={{payload.data.humidity}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 820,
+        "y": 1600,
+        "wires": [
+            [
+                "e7f4562000f3c2ff"
+            ]
+        ]
+    },
+    {
+        "id": "e7f4562000f3c2ff",
+        "type": "debug",
+        "z": "d0e78df9fb0c4df6",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "f5dc48519a06dae4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "def4d719f508348c",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "19ef4ff9d13cfd9f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "86953c6a3e47d14b",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "19ef4ff9d13cfd9f",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "19ef4ff9d13cfd9f",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": true,
+        "hidden": false
+    }
+]
