@@ -19,7 +19,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 const char* ssid = "fuxk";                      //อย่าลืมแก้ไข SSID ของ WIFI ที่จะให้ NodeMCU ไปเชื่อมต่อ
 const char* password = "12345678";              //อย่าลืมแก้ไข PASSWORD ของ WIFI
-const char* mqtt_server = "broker.hivemq.com";  //อย่าลืมแก้ไข BROKER
+const char* mqtt_server = "test.mosquitto.org";  //อย่าลืมแก้ไข BROKER
 const int mqtt_port = 1883;
 const char* mqtt_Client = "fa54c3d5-205c-4eaa-8695-xxxxxxx";  //อย่าลืมแก้ไข ClientID
 const char* mqtt_username = "";                               //อย่าลืมแก้ไข Token
@@ -34,7 +34,9 @@ unsigned long exitStartTime = 0;
 long lastMsg = 0;
 int value = 0;
 char msg[100];
+char Total[100];
 String DataString;
+String People;
 int checkUID();
 
 WiFiClient espClient;
@@ -64,6 +66,7 @@ void reconnect() {
       Serial.println("connected");
       client.subscribe("button/status");
       client.subscribe("project");  //Node-red
+      client.subscribe("People");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
@@ -111,6 +114,7 @@ void setup() {
   client.setCallback(callback);              //ตั้งค่าฟังก์ชันที่จะทำงานเมื่อมีข้อมูลเข้ามาผ่านการ Subscribe
   client.subscribe("button/status");
   client.subscribe("project");
+  client.subscribe("People");
   pinMode(LED_PIN, OUTPUT);       // Set LED pin as output
   digitalWrite(LED_PIN, LOW);     // Start with the LED off
   pinMode(BUTTON_PIN, INPUT);     // Set button pin as input
@@ -216,14 +220,18 @@ void loop() {
     if (!client.connected()) {
       reconnect();
     }
-    totalCount = count;
+    totalCount += count;
     client.loop();
     ++value;
-    DataString = (String)totalCount;
+    DataString = (String)count;
+    People = (String)totalCount;
     DataString.toCharArray(msg, 100);
+    People.toCharArray(Total, 100);
     Serial.println(names[uidIndex]);
     client.publish("project", jsonMessage.c_str());
     client.publish("project", msg);  // อย่าลืมแก้ไข TOPIC ที่จะทำการ PUBLISH ไปยัง MQTT BROKER(name)
+    client.publish("People", Total);
+    count = 0;
 
     delay(1000);                   // Relay active for 5 seconds
     digitalWrite(LED_PIN, LOW);    // Turn off the LED
