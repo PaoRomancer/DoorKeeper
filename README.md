@@ -77,5 +77,5 @@ Integrate a camera module with face recognition software (such as OpenCV) to add
 #### Hall magnetic Sensor Module:
 Currently we are using delay to command the electric lock to lock, in the future we will develop using magnetic sensor.
 
-## Screenshots
+
 
