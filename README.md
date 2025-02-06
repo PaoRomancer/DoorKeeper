@@ -44,7 +44,7 @@ This project addresses the need for creating a secure and private working enviro
 
 ![My Project Screenshot](image/finalpj.png) 
 
-## Platform and dependencies
+## 📍 Platform and dependencies
 The source code was written on PlatformIO IDE with Arduino framework.
 
 Library used:
