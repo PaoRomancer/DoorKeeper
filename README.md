@@ -54,7 +54,7 @@ Library used:
 ## 👥 Credits
 
 ### Member
-- NATTHAWIT NOWANGHAN : Hardware (Device) & Cloud & User Interface
+- NATTHAWIT N. : Hardware (Device) & Cloud & User Interface
 - TECHAWICH  AJJAGLAB : Create a model that can be used to simulate the project
 - THANATHON  PINYOMETAKUN : Database & Cloud & User Interface  
 
